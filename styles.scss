@@ -54,10 +54,27 @@ body {
 
 header {
     grid-area: header;
+    
 }
 
 .hero {
     grid-area: hero;
+    background: url(https://images.unsplash.com/photo-1593096971158-dadbb0b00ee5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fHJvdWdoJTIwdGV4dHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    @include font-alt($fs-x1);
+    margin: 0;
+}
+ 
+.hero-subtitle {
+    @include font-base($color: $white, $font-size: $fs-h2);
+    margin: 0;
 }
 
 main {
@@ -65,9 +82,25 @@ main {
 }
 aside {
     grid-area: sidebar;
+    background: $dark-gray;
+    padding: 2em;
 }
 footer {
     grid-area: footer;
+}
+
+header,
+footer {
+    background: $black;
+    color: $yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title,
+.footer-title {
+    @include font-alt($color: $yellow, $font-size: $fs-h2);
 }
 
 

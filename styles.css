@@ -27,6 +27,38 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: hero;
+  background: url(https://images.unsplash.com/photo-1593096971158-dadbb0b00ee5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fHJvdWdoJTIwdGV4dHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-title {
+  font-family: "oswald", sans-serif;
+  font-size: 6rem;
+  color: #252525;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-family: "Merriweather", serif;
+  font-size: 2.875rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
 }
 
 main {
@@ -39,6 +71,8 @@ aside {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: sidebar;
+  background: #e8e8e8;
+  padding: 2em;
 }
 
 footer {
@@ -46,5 +80,29 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: footer;
+}
+
+header,
+footer {
+  background: #252525;
+  color: #e9d20f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-title,
+.footer-title {
+  font-family: "oswald", sans-serif;
+  font-size: 2.875rem;
+  color: #e9d20f;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
 }
 /*# sourceMappingURL=styles.css.map */
