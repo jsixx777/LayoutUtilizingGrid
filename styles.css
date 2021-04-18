@@ -119,6 +119,7 @@ footer {
       grid-template-areas: "img title" "img content";
   -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5em;
 }
 
 .card-img {
@@ -141,5 +142,9 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: content;
+}
+
+a {
+  color: #e9d20f;
 }
 /*# sourceMappingURL=styles.css.map */

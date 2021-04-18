@@ -113,6 +113,7 @@ footer {
     grid-template-areas: "img title"
     "img content";
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5em;
     
 }
 
@@ -130,6 +131,10 @@ footer {
 }
 .card-content {
     grid-area: content;
+}
+
+a {
+    color: $yellow;
 }
 
 
