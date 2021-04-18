@@ -5,7 +5,6 @@ body {
   font-weight: 300;
   color: #252525;
   line-height: 1.6;
-  background-color: blue;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 10em 50vh auto 10em;
@@ -13,6 +12,7 @@ body {
   -ms-grid-columns: 1fr 5fr 2fr 1fr;
       grid-template-columns: 1fr 5fr 2fr 1fr;
       grid-template-areas: "header header header header" "hero hero hero hero" ". main sidebar ." "footer footer footer footer";
+  grid-column-gap: 1.5em;
 }
 
 header {
@@ -104,5 +104,42 @@ footer {
   color: #e9d20f;
   text-transform: uppercase;
   letter-spacing: 0.3em;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content auto;
+      grid-template-rows: -webkit-min-content auto;
+      grid-template-rows: min-content auto;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-column-gap: 1.5em;
+  padding: 1.5em;
+      grid-template-areas: "img title" "img content";
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  max-width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+.card-title {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+  font-weight: 300;
+}
+
+.card-content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content;
 }
 /*# sourceMappingURL=styles.css.map */
