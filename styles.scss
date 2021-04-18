@@ -44,10 +44,10 @@ body {
 
     display: grid;
     grid-template-rows: 10em 50vh auto 10em;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-columns: 1fr minmax(30em,5fr) minmax(25em,2fr) 1fr;
     grid-template-areas: "header header header header"
     "hero hero hero hero"
-    ". main sidebar ."
+    ". main sidebar ." 
     "footer footer footer footer";
     grid-column-gap: 1.5em;
     
